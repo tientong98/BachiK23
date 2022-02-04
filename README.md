@@ -7,6 +7,7 @@ Code for Dr. Bachi's K23 (https://labs.icahn.mssm.edu/bachilab/)
 3. Running MRIQC and fMRIPrep locally using docker, steps detailed in [MRIQC_fMRIPrep.ipynb](https://github.com/tientong98/xnat_download/blob/main/MRIQC_fMRIPrep.ipynb)
 4. Running MRIQC on Flywheel
     * Setting up Flywheel CLI: [Flywheel.ipynb](https://github.com/tientong98/xnat_download/blob/main/Flywheel.ipynb) 
-    * Importing BIDS-formatted data to Flywheel, then run the MRIQC gear [flywheel_import_mriqc.sh]( https://github.com/tientong98/xnat_download/blob/main/flywheel_import_mriqc.sh)
+    * Importing BIDS-formatted data to Flywheel, then run the MRIQC gear [flywheel_import_mriqc.sh]( https://github.com/tientong98/xnat_download/blob/main/flywheel_import_mriqc.sh). 
+      * This bash script calls [flywheel_mriqc.py](https://github.com/tientong98/BachiK23/blob/main/flywheel_mriqc.py) to run MRIQC gear on Flywheel for specified subject and scan type (anat or func - also, which func task).
 5. [Exploratory test](https://github.com/tientong98/BachiK23/blob/main/r01_ml_GM-Git.ipynb) if brain volumes (Freesurfer T1w) and immune markers can be used to predict drug use and childhood trauma. 
 6. [Resting State: Work in progress](https://github.com/tientong98/BachiK23/blob/main/restingState/rest_git.ipynb)
